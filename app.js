@@ -1,15 +1,6 @@
-// create an express app
-const express = require("express")
-const app = express()
+var connect = require('connect');
+var serveStatic = require('serve-static');
 
-// use the express-static middleware
-app.use(express.static("public"))
-
-// define the first route
-app.get("/", function (req, res) {
-  res.send("<h1>Hello World!</h1>")
-})
-
-// start the server listening for requests
-app.listen(process.env.PORT || 3000, 
-	() => console.log("Server is running..."));
+connect()
+    .use(serveStatic(__dirname +"/public/"))
+    .listen(8080, () => console.log('Server running on 8080...'));
