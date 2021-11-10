@@ -1,6 +1,4 @@
-var connect = require('connect');
-var serveStatic = require('serve-static');
-
-connect()
-    .use(serveStatic(__dirname +"/public/"))
-    .listen(8080, () => console.log('Server running on 8080...'));
+var express = require('express');
+var app = express();
+app.use('/', express.static(__dirname + '/public')); 
+app.listen(3000, function() { console.log('running server...'); });
