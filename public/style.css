@@ -33,6 +33,7 @@ main {
     top: 29px;
     left: 1160px;
     font-family: 'Zen Kurenaido', sans-serif;
+    color: white;
 
 }
 
@@ -53,4 +54,57 @@ main {
 .imagens img {
   width: 200px;
   height: 200px;
+}
+
+a:link{
+    text-decoration:none;
+    color:white;
+    }
+    
+    a:visited{
+    text-decoration:none;
+    color:white;
+    }
+    
+    a:hover{
+    text-decoration:none;
+    color:pink;
+    }
+    
+    a:active{
+    text-decoration:none;
+    color:white;
+    }
+    
+#sobre{
+    text-align: center;
+    font-family: Roboto
+
+}
+
+#info{
+    text-align: center;
+    line-height: 22px;
+    font-family: 'Zen Kurenaido', sans-serif;
+
+}
+
+#email{
+    position: absolute;
+    left: 380px;
+    background-color: rgba(0, 0, 0, 0.37);
+    font-size: 16px;
+    border-radius: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#sitej{
+    position: absolute;
+    left: 710px;
+    background-color: rgba(0, 0, 0, 0.37);
+    font-size: 16px;
+    border-radius: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
